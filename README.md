@@ -1,4 +1,4 @@
-# Honors-Thesis
+# PoTRA File Information 
 ---
 
 
@@ -8,4 +8,4 @@
 
 - **testresults.RData** : contains the varaibles to run. 'gboth' is a list returned from segmentsample.R using the json files in the repo and 'results2' is the output of PoTRA using gboth.
 
-- **trypotra.R** : runs various sizes of genes to see which ones break PoTRA. I will add a file containing results when I finish
+- **trypotra.R** : runs various sizes of genes to see which ones break PoTRA. I will add a file containing results when I finish.
