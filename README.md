@@ -1,11 +1,15 @@
-# PoTRA File Information 
+# PoTRA 
 ---
 
 
 ----------
-## **File Information** ##
-- **segmentsample.R** : takes a list of json files of data from BigQuery and returns a list of size 2 with index 1 being a dataframe that can be inputted into PoTRA and index 2 being the coressponding genelist  
+PoTRA is a PageRank-based method that can be used to detect pathways involved in disease.
 
-- **testresults.RData** : contains the varaibles to run. 'gboth' is a list returned from segmentsample.R using the json files in the repo and 'results2' is the output of PoTRA using gboth.
+For information about the method, please read:
 
-- **trypotra.R** : runs various sizes of genes to see which ones break PoTRA. I will add a file containing results when I finish.
+Chaoxing Li, Li Liu and Valentin Dinu. “Pathways of Topological Rank Analysis (PoTRA): A Novel Method to Detect Pathways Involved in Cancer”, 2018
+
+## **Folder Information** ##
+- **Base Code** : contains the R script to run PoTRA along with an example usage and data to test it
+
+- **Analysis** : contains datafiles and code to create and test datafiles
