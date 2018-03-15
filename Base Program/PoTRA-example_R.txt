@@ -1,0 +1,21 @@
+
+library(BiocGenerics)
+library(graph)
+library(graphite)
+library(igraph)
+
+
+
+##For PoTRA.cor:
+
+results.cor <-PoTRA.cor(mydata=mydata,genelist=genelist,Num.sample.normal=8,Num.sample.case=8,Pathway.database=humanKEGG[1:10],PR.quantile=0.95)
+
+
+##For PoTRA.comb:
+
+results.comb <-PoTRA.comb(mydata=mydata,genelist=genelist,Num.sample.normal=8,Num.sample.case=8,Pathway.database=humanKEGG[1:10],PR.quantile=0.95)
+
+
+##For the kernel density plot (as Figure 4 in our paper):
+
+results.plot <- overlayplot(mydata=mydata,genelist=genelist,Num.sample.normal=8,Num.sample.case=8,Pathway.database=humanKEGG[[1]])
