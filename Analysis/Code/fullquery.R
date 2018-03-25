@@ -79,6 +79,7 @@ loopData <- function(patientdf, project) {
     genelist <- df[, "rn", drop = FALSE]
     row.names(df) <- df$rn
     df <- within(df, rm("rn"))
+    genelist <- within(genelist, rm("rn"))
     return(list(df, genelist))
 
 }
